@@ -13,7 +13,7 @@ try:
 	chromosomes.append("X")
 	for chromosome in chromosomes:
 		print( chromosome )
-		cmd = "%s%s%s%s_%s%s%s%s%s_%s" % ( "perl /media/Dazs/youngji/Resource/mr-eel/mr_eel.pl --in " , inDir , "chr" , chromosome , in_postfix , " --seq --rates /media/Dazs/youngji/Resource/mr-eel/ERV_7bp_rates.txt --ref /media/Dazs/youngji/Resource/human_g1k_v37.fasta > " , outDir , "chr" , chromosome , out_postfix )
+		cmd = "%s%s%s%s_%s%s%s%s%s_%s" % ( "perl mr_eel.pl --in " , inDir , "chr" , chromosome , in_postfix , " --seq --rates ERV_7bp_rates.txt --ref human_g1k_v37.fasta > " , outDir , "chr" , chromosome , out_postfix )
 		print( cmd )
 		process = subprocess.Popen( cmd, shell=True )
 		process.wait()
