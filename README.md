@@ -18,7 +18,7 @@
 - `python position_variantID.py /media/Dazs/youngji/Coverage_Analysis/Coverage_Summary_"$COHORT"_min-coverage_10/ Covered_90_percent_Positions_Gene_Chr_Pos_"$COHORT"_min-coverage_10_site.summary.csv Covered_90_percent_Positions_Gene_variantID_"$COHORT"_min-coverage_10_site.summary.txt`
   
 - Split coverage files according to the chromosomes
-- `python modified_split_covered_positions.py /media/Dazs/youngji/Coverage_Analysis/Coverage_Summary_"$COHORT"_min-coverage_10/ Covered_90_percent_Positions_"$COHORT"_min-coverage_10_chr_pos.txt "$COHORT"`
+- `python Split_covered_positions.py /media/Dazs/youngji/Coverage_Analysis/Coverage_Summary_"$COHORT"_min-coverage_10/ Covered_90_percent_Positions_"$COHORT"_min-coverage_10_chr_pos.txt "$COHORT"`
 
 
 ## All possible variants to calculate expected variants
