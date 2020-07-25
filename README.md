@@ -23,16 +23,16 @@
 
 ## All possible variants to calculate expected variants
 ### LOF
-- `python /media/Dazs/youngji/Scripts/cadd_anno_LOF.py /media/Dazs/youngji/Resource/ whole_genome_SNVs_inclAnno.tsv.gz LOF_cadd_anno.txt`
+- `python cadd_anno_LOF.py JOBDIR whole_genome_SNVs_inclAnno.tsv.gz LOF_cadd_anno.txt`
 - `cut -f1 LOF_cadd_anno.txt > LOF_cadd_anno_variant.txt`
 - Split CADD LOF files according to the chromosomes
-- `python /media/Dazs/youngji/Scripts/split_cadd_variant.py /media/Dazs/youngji/Resource/Chr_LOF_CADD/ /media/Dazs/youngji/Resource/LOF_cadd_anno_variant.txt LOF`
+- `python split_cadd_variant.py /Chr_LOF_CADD/ LOF_cadd_anno_variant.txt LOF`
 
 ### Nonsynonymous
-- `python /media/Dazs/youngji/Scripts/cadd_anno_nonsynonymous.py /media/Dazs/youngji/Resource/ whole_genome_SNVs_inclAnno.tsv.gz Nonsynonymous_cadd_anno.txt`
+- `python cadd_anno_nonsynonymous.py JOBDIR whole_genome_SNVs_inclAnno.tsv.gz Nonsynonymous_cadd_anno.txt`
 - `cut -f1 Nonsynonymous_cadd_anno.txt > Nonsynonymous_cadd_anno_variant.txt`
 - Split CADD Nonsynonymous files according to the chromosomes
-- `python /media/Dazs/youngji/Scripts/split_cadd_variant.py /media/Dazs/youngji/Resource/Chr_Nonsynonymous_CADD/ /media/Dazs/youngji/Resource/Nonsynonymous_cadd_anno_variant.txt Nonsynonymous`
+- `python split_cadd_variant.py /Chr_Nonsynonymous_CADD/ Nonsynonymous_cadd_anno_variant.txt Nonsynonymous`
 
 
 
