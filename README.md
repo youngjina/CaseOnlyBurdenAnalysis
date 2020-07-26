@@ -29,7 +29,7 @@
 - `python split_cadd_variant.py /Chr_LOF_CADD/ LOF_cadd_anno_variant.txt LOF`
 
 ### Nonsynonymous
-- `python cadd_anno_nonsynonymous.py JOBDIR whole_genome_SNVs_inclAnno.tsv.gz Nonsynonymous_cadd_anno.txt`
+- `python cadd_anno_nonsynonymous.py "$JOBDIR" whole_genome_SNVs_inclAnno.tsv.gz Nonsynonymous_cadd_anno.txt`
 - `cut -f1 Nonsynonymous_cadd_anno.txt > Nonsynonymous_cadd_anno_variant.txt`
 - Split CADD Nonsynonymous files according to the chromosomes
 - `python split_cadd_variant.py /Chr_Nonsynonymous_CADD/ Nonsynonymous_cadd_anno_variant.txt Nonsynonymous`
