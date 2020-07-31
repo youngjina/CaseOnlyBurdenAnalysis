@@ -24,9 +24,7 @@
 ### LOF
 `atav.sh --list-var-geno --sample Fam_CKD_n553.txt --effect "$LOF_EFFECTS" --min-coverage 10 --exclude-artifacts --exclude-evs-qc-failed --ccds-only --include-qc-missing --filter PASS,LIKELY,INTERMEDIATE --qd 2 --qual 50 --mq 40 --gq 20 --rprs -3 --mqrs -10 --snv-fs 60 --indel-fs 200 --snv-sor 3 --indel-sor 10 --het-percent-alt-read 0.3-1 --max-qc-fail-sample 0 --gnomad-exome-rf-tp-probability-snv 0.1 --gnomad-exome-rf-tp-probability-indel 0.2 --gnomad-exome-pop global --gnomad-exome-af 0 --loo-af 5e-04 --include-rvis --out CKD_n553_LOF_gnomad_0_looaf_5e-04`
 
-`LOF_EFFECTS="HIGH:exon_loss_variant,HIGH:frameshift_variant,HIGH:rare_amino_acid_vari
-ant,HIGH:stop_gained,HIGH:stop_lost,HIGH:start_lost,HIGH:gene_fusion,HIGH:bidirection
-al_gene_fusion,HIGH:splice_acceptor_variant,HIGH:splice_donor_variant"`
+`LOF_EFFECTS="HIGH:exon_loss_variant,HIGH:frameshift_variant,HIGH:rare_amino_acid_variant,HIGH:stop_gained,HIGH:stop_lost,HIGH:start_lost,HIGH:gene_fusion,HIGH:bidirectional_gene_fusion,HIGH:splice_acceptor_variant,HIGH:splice_donor_variant"`
 
 
 ### Nonsynonymous
@@ -38,14 +36,7 @@ al_gene_fusion,HIGH:splice_acceptor_variant,HIGH:splice_donor_variant"`
 ### LOF + Nonsynonymous
 `atav.sh --list-var-geno --sample Fam_CKD_n553.txt --effect "$FUNCTIONAL_EFFECTS" --min-coverage 10 --exclude-artifacts --exclude-evs-qc-failed --ccds-only --include-qc-missing --filter PASS,LIKELY,INTERMEDIATE --qd 2 --qual 50 --mq 40 --gq 20 --rprs -3 --mqrs -10 --snv-fs 60 --indel-fs 200 --snv-sor 3 --indel-sor 10 --het-percent-alt-read 0.3-1 --max-qc-fail-sample 0 --gnomad-exome-rf-tp-probability-snv 0.1 --gnomad-exome-rf-tp-probability-indel 0.2 --gnomad-exome-pop global --gnomad-exome-af 0 --loo-af 5e-04 --include-rvis --out CKD_n553_LOF_Nonsynonymous_gnomad_looaf_5e-04`
 
-`FUNCTIONAL_EFFECTS="HIGH:exon_loss_variant,HIGH:frameshift_variant,HIGH:rare_amino_ac
-id_variant,HIGH:stop_gained,HIGH:start_lost,HIGH:stop_lost,HIGH:splice_acceptor_varia
-nt,HIGH:splice_donor_variant,HIGH:gene_fusion,HIGH:bidirectional_gene_fusion,MODERATE
-:3_prime_UTR_truncation+exon_loss_variant,MODERATE:5_prime_UTR_truncation+exon_loss_v
-ariant,MODERATE:coding_sequence_variant,MODERATE:disruptive_inframe_deletion,MODERATE
-:disruptive_inframe_insertion,MODERATE:conservative_inframe_deletion,MODERATE:conserv
-ative_inframe_insertion,MODERATE:missense_variant+splice_region_variant,MODERATE:miss
-ense_variant"`
+`FUNCTIONAL_EFFECTS="HIGH:exon_loss_variant,HIGH:frameshift_variant,HIGH:rare_amino_acid_variant,HIGH:stop_gained,HIGH:start_lost,HIGH:stop_lost,HIGH:splice_acceptor_variant,HIGH:splice_donor_variant,HIGH:gene_fusion,HIGH:bidirectional_gene_fusion,MODERATE:3_prime_UTR_truncation+exon_loss_variant,MODERATE:5_prime_UTR_truncation+exon_loss_variant,MODERATE:coding_sequence_variant,MODERATE:disruptive_inframe_deletion,MODERATE:disruptive_inframe_insertion,MODERATE:conservative_inframe_deletion,MODERATE:conservative_inframe_insertion,MODERATE:missense_variant+splice_region_variant,MODERATE:missense_variant"`
 
 
 ## All possible variants to calculate expected variants
@@ -60,9 +51,6 @@ ense_variant"`
 - `cut -f1 Nonsynonymous_cadd_anno.txt > Nonsynonymous_cadd_anno_variant.txt`
 - Split CADD Nonsynonymous files according to the chromosomes
 - `python split_cadd_variant.py /Chr_Nonsynonymous_CADD/ Nonsynonymous_cadd_anno_variant.txt Nonsynonymous`
-
-
-
 
 
 ## Make mutation rate
