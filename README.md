@@ -20,6 +20,15 @@
 - Split coverage files according to the chromosomes
 - `python Split_covered_positions.py /Coverage_Summary_"$COHORT"_min-coverage_10/ Covered_90_percent_Positions_"$COHORT"_min-coverage_10_chr_pos.txt "$COHORT"`
 
+## Extract observed variants 
+### LOF
+`atav.sh --list-var-geno --sample Fam_CKD_n553.txt --effect /nfs/external/Gharavi/yn2318/Resources/dragen_lof.txt --min-coverage 10 --exclude-artifacts --exclude-evs-qc-failed --ccds-only --include-qc-missing --filter PASS,LIKELY,INTERMEDIATE --qd 2 --qual 50 --mq 40 --gq 20 --rprs -3 --mqrs -10 --snv-fs 60 --indel-fs 200 --snv-sor 3 --indel-sor 10 --het-percent-alt-read 0.3-1 --max-qc-fail-sample 0 --gnomad-exome-rf-tp-probability-snv 0.1 --gnomad-exome-rf-tp-probability-indel 0.2 --gnomad-exome-pop global --gnomad-exome-af 0 --loo-af 5e-04 --include-rvis --out CKD_n553_LOF_gnomad_0_looaf_5e-04`
+
+### Nonsynonymous
+`atav.sh --list-var-geno --sample Fam_CKD_n553.txt --effect /nfs/external/Gharavi/yn2318/Resources/dragen_nonsynonymous.txt --min-coverage 10 --exclude-artifacts --exclude-evs-qc-failed --ccds-only --include-qc-missing --filter PASS,LIKELY,INTERMEDIATE --qd 2 --qual 50 --mq 40 --gq 20 --rprs -3 --mqrs -10 --snv-fs 60 --indel-fs 200 --snv-sor 3 --indel-sor 10 --het-percent-alt-read 0.3-1 --max-qc-fail-sample 0 --gnomad-exome-rf-tp-probability-snv 0.1 --gnomad-exome-rf-tp-probability-indel 0.2 --gnomad-exome-pop global --gnomad-exome-af 0 --loo-af 5e-04 --include-rvis --out CKD_n553_Nonsynonymous_gnomad_0_looaf_5e-04`
+
+### LOF + Nonsynonymous
+`atav.sh --list-var-geno --sample Fam_CKD_n553.txt --effect /nfs/external/Gharavi/yn2318/Resources/dragen_functional.txt --min-coverage 10 --exclude-artifacts --exclude-evs-qc-failed --ccds-only --include-qc-missing --filter PASS,LIKELY,INTERMEDIATE --qd 2 --qual 50 --mq 40 --gq 20 --rprs -3 --mqrs -10 --snv-fs 60 --indel-fs 200 --snv-sor 3 --indel-sor 10 --het-percent-alt-read 0.3-1 --max-qc-fail-sample 0 --gnomad-exome-rf-tp-probability-snv 0.1 --gnomad-exome-rf-tp-probability-indel 0.2 --gnomad-exome-pop global --gnomad-exome-af 0 --loo-af 5e-04 --include-rvis --out CKD_n553_LOF_Nonsynonymous_gnomad_looaf_5e-04`
 
 ## All possible variants to calculate expected variants
 ### LOF
