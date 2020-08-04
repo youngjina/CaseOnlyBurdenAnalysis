@@ -53,7 +53,7 @@
 - `python split_cadd_variant.py /Chr_Nonsynonymous_CADD/ Nonsynonymous_cadd_anno_variant.txt Nonsynonymous`
 
 
-## Make mutation rate
+## Estimate mutation rate
 - Generate_AllPossibleVariants_WellCoveredRegion.py
 - Extract_MutationRate_AllPossibleVariants_WellCoveredRegion.py
 - Download human_g1k_v37.fasta.gz from http://ftp.1000genomes.ebi.ac.uk/vol1/ftp/technical/reference/ 
