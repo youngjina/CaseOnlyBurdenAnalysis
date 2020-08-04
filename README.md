@@ -54,8 +54,8 @@
 
 
 ## Make mutation rate
-- Generate_AllPossibleVariants_WellCoveredRegion.sh
-- Extract_MutationRate_AllPossibleVariants_WellCoveredRegion.sh
+- Generate_AllPossibleVariants_WellCoveredRegion.py
+- Extract_MutationRate_AllPossibleVariants_WellCoveredRegion.py
 
 ## Run the case-only burden analysis
 - CaseOnlyBurdenAnalysis_LOF.R
