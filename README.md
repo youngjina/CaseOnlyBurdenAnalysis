@@ -56,6 +56,7 @@
 ## Make mutation rate
 - Generate_AllPossibleVariants_WellCoveredRegion.py
 - Extract_MutationRate_AllPossibleVariants_WellCoveredRegion.py
+- Download human_g1k_v37.fasta.gz from http://ftp.1000genomes.ebi.ac.uk/vol1/ftp/technical/reference/ 
 
 ## Run the case-only burden analysis
 - CaseOnlyBurdenAnalysis_LOF.R
