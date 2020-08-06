@@ -1,4 +1,8 @@
 # Case-Only Burden Analysis
+Rare variants have been shown to contribute to many sporadic genetic disorders, motivating systematic genome-wide sequencing studies for complex traits. The standard designs include family-based trios for the analysis of de novo mutations (DNMs), or case-control (CC) cohorts. A main challenge in DNM and CC analysis is the necessity for availability of family members or controls matched for ethnicity and sequence coverage respectively.
+
+For those situations when it is difficult to identify appropriate controls, we develop a gene-based association test of rare variants using case-only exome data. We make use of recent estimates of mutation rates at positions throughout the genome to calculate the expected mutation rates per gene, taking into account only well covered sites where at least 90% of samples are covered at >10X, and identify genes with significantly higher burden of mutations compared to expectation.
+
 ## Adjust for Read Depth
 - Bases with at least 90% of samples covered at 10X for each cohort are retained.
   
