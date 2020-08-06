@@ -1,4 +1,4 @@
-# CaseOnlyBurdenAnalysis
+# Case-Only Burden Analysis
 ## Adjust for Read Depth
 - Bases with at least 90% of samples covered at 10X for each cohort are retained.
   
