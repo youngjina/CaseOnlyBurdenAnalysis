@@ -40,7 +40,6 @@ Usage: `Rscript CaseOnlyBurdenAnalysis_Missense.R`
 
 ### Dependencies  
 
-##### Software
 - R (v.3.5.3)
 	- tidyverse
 	- plyr
