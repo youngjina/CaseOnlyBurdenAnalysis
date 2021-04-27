@@ -38,3 +38,8 @@ Usage: `Rscript CaseOnlyBurdenAnalysis_LOF_Missense.R`
 Script for running a case-only burden analysis for Missense model  
 Usage: `Rscript CaseOnlyBurdenAnalysis_Missense.R`
 
+### Dependencies  
+
+##### Software
+- R (v.3.5.3)
+	- optparse
