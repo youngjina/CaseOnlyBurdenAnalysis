@@ -7,21 +7,21 @@ This repository contains the scripts necessary to conduct a gene-based associati
 ### Outline
 
 #### 1. Select_covered_positions_by_percent.R
-Script for selecting positions that are covered at 90% of samples
+Script for selecting positions that are covered at 90% of samples   
 Usage: `Rscript Select_covered_positions_by_percent.R`
 
 #### 2. position_variantID.py
-Script for converting format (Input: gene,chr,pos; Output: chr-pos"\t"gene)
+Script for converting format (Input: gene,chr,pos; Output: chr-pos"\t"gene)  
 Usage: `python position_variantID.py` 
 
 #### 3. Split_covered_positions.py
-Script for splitting positions that are covered at 90% of samples in the coverage files according to the chromosomes
+Script for splitting positions that are covered at 90% of samples in the coverage files according to the chromosomes  
 Usage: `python Split_covered_positions.py`
 
 #### 4. Generate_AllPossibleVariants_WellCoveredRegion.py
-Script for extracting rare well-covered mutations
+Script for extracting rare well-covered mutations  
 Usage: `python Generate_AllPossibleVariants_WellCoveredRegion.py`
 
 #### 5. Extract_MutationRate_AllPossibleVariants_WellCoveredRegion.py
-Script for annotating mutation rate of variants
+Script for annotating mutation rate of variants  
 Usage: `python Extract_MutationRate_AllPossibleVariants_WellCoveredRegion.py`
