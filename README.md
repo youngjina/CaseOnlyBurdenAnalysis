@@ -25,3 +25,12 @@ Usage: `python Generate_AllPossibleVariants_WellCoveredRegion.py`
 #### 5. Extract_MutationRate_AllPossibleVariants_WellCoveredRegion.py
 Script for annotating mutation rate of variants  
 Usage: `python Extract_MutationRate_AllPossibleVariants_WellCoveredRegion.py`
+
+#### 6. CaseOnlyBurdenAnalysis_LOF.R 
+Script for running a case-only burden analysis for LOF model
+
+#### 7. CaseOnlyBurdenAnalysis_LOF_Missense.R  
+Script for running a case-only burden analysis for the combination of LOF and Missense model
+
+#### 8. CaseOnlyBurdenAnalysis_Missense.R  
+Script for running a case-only burden analysis for Missense model
