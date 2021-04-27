@@ -42,4 +42,24 @@ Usage: `Rscript CaseOnlyBurdenAnalysis_Missense.R`
 
 ##### Software
 - R (v.3.5.3)
+	- tidyverse
+	- plyr
+	- mgcv
+	- data.table
+	- argparse
 	- optparse
+	
+- python (v.3.7.6)
+	- subprocess
+	- os
+	- re
+	- sys
+	- gzip
+
+- perl (v5.18.2)
+	- POSIX
+	- FindBin
+	- Getopt::Long
+	- Pod::Usage
+	- File::Basename
+	- List::Util
