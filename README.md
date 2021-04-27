@@ -27,13 +27,14 @@ Script for annotating mutation rate of variants
 Usage: `python Extract_MutationRate_AllPossibleVariants_WellCoveredRegion.py`
 
 #### 6. CaseOnlyBurdenAnalysis_LOF.R 
-Script for running a case-only burden analysis for LOF model
+Script for running a case-only burden analysis for LOF model  
 Usage: `Rscript CaseOnlyBurdenAnalysis_LOF.R`
 
 #### 7. CaseOnlyBurdenAnalysis_LOF_Missense.R  
-Script for running a case-only burden analysis for the combination of LOF and Missense model
+Script for running a case-only burden analysis for the combination of LOF and Missense model  
 Usage: `Rscript CaseOnlyBurdenAnalysis_LOF_Missense.R`
 
 #### 8. CaseOnlyBurdenAnalysis_Missense.R  
-Script for running a case-only burden analysis for Missense model
+Script for running a case-only burden analysis for Missense model  
 Usage: `Rscript CaseOnlyBurdenAnalysis_Missense.R`
+
